@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #can{
+           background: black;
+       }
+    </style>
+</head>
+<body>
+    <canvas id="can" width="400px" height="400px">
+    </canvas>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+    var oCan=document.getElementById("can");
+    var can=oCan.getContext("2d"); 
+    // can.beginPath();
+    // can.moveTo(150,70);
+    // can.lineTo(370,360); 
+    // can.strokeStyle="white";
+    // can.lineWidth="10";
+    // can.stroke();
+    $("canvas").mousedown(function(e){
+       can.beginPath();
+       can.moveTo(e.clientX,e.clientY);
+       
+       oCan.onmousemove=function(e){
+       can.lineTo(e.clientX,e.clientY); 
+       can.strokeStyle="white";
+       can.stroke();
+       };
+       $("canvas").mouseup(function(){
+         oCan.onmousemove=null;
+      })
+    })
+    
+
+    // $("canvas").mousemove(function(e){
+    //    $("canvas").text(e.clientX + ", " + e.clientY);
+    //    console.log(e.pageX,e.pageY);
+    //    can.beginPath();
+    //    can.moveTo(e.clientX,e.clientY);
+    //    can.lineTo(e.clientX,e.clientY); 
+    //    can.strokeStyle="white";
+    //    can.stroke();
+    //  });
+     
+    </script>
+</body>
+</html>

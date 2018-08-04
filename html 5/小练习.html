@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      body,html{
+          height: 100%;
+      }
+      .first{
+          margin-top: 10%;
+          height: 100%;
+          background: red;
+      }
+      .second{
+          height: 100%;
+          background: blue;
+      }
+      .third{
+          /* margin-bottom: 60%; */
+          height: 100%;
+          background: green;
+      }
+    </style>
+</head>
+<body>
+    <button id="one">红色上来</button>
+    <button id="two">蓝色上来</button>
+    <button id="three">绿色上来</button>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script>
+    //    var One=document.getElementById("one");
+    //    var Two=document.getElementById("two");
+    //    var Three=document.getElementById("three");
+        $("#one").on("click",function(){
+            $('body, html').animate({
+                scrollTop: $(".first").offset().top  
+            },1000)
+        })
+        $("#two").on("click",function(){
+            $('body, html').animate({
+                scrollTop: $(".second").offset().top  
+            },1000)
+        })
+        $("#three").on("click",function(){
+            $('body, html').animate({
+                scrollTop: $(".third").offset().top  
+            },1000)
+        })
+    </script>
+</body>
+</html>
