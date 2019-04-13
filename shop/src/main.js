@@ -15,10 +15,17 @@ import '@/assets/js/rem.js'
 // Vue.use(Vant);
 
 //按需引入(推荐)GoodsAction,GoodsActionBigBtn,GoodsActionMiniBtn,.use(GoodsAction).use(GoodsActionBigBtn).use(GoodsActionMiniBtn)
+<<<<<<< HEAD
  import {GoodsAction,Card,SubmitBar,
   GoodsActionBigBtn,
   GoodsActionMiniBtn,PullRefresh,List,Row,Col,Toast,CellGroup,Field,Button,Icon,NavBar,Tabbar, TabbarItem,Swipe,SwipeItem,Lazyload,Tab, Tabs} from 'vant'
  Vue.use(GoodsAction).use(Card).use(SubmitBar)
+=======
+ import {GoodsAction,
+  GoodsActionBigBtn,
+  GoodsActionMiniBtn,PullRefresh,List,Row,Col,Toast,CellGroup,Field,Button,Icon,NavBar,Tabbar, TabbarItem,Swipe,SwipeItem,Lazyload,Tab, Tabs} from 'vant'
+ Vue.use(GoodsAction)
+>>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
  .use(GoodsActionBigBtn)
  .use(GoodsActionMiniBtn).use(PullRefresh).use(List).use(Row).use(Col).use(Toast).use(CellGroup).use(Field).use(Button).use(Icon).use(NavBar).use(Tabbar).use(TabbarItem).use(Swipe).use(SwipeItem).use(Lazyload).use(Tab).use(Tabs)
 

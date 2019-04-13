@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Classify from './views/Classify.vue'
 import Cart from './views/Cart.vue'
 import Myhome from './views/Myhome.vue'
+<<<<<<< HEAD
 import Detail from './views/Detail.vue'
 
 //路由懒加载，点击一个加载一个
@@ -12,6 +13,10 @@ import Detail from './views/Detail.vue'
 // let Cart=()=>import('./views/Cart.vue');
 // let Myhome=()=>import('./views/Myhome.vue');
 // let Detail=()=>import('./views/Detail.vue');
+=======
+// import Ajax from './views/Ajax.vue'
+import Detail from './views/Detail.vue'
+>>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
 import FooterBar from './components/FooterBar.vue'
 
 Vue.use(Router)
@@ -25,11 +30,15 @@ export default new Router({
       components:{
         default:Home,
         'footer-bar':FooterBar
+<<<<<<< HEAD
       },
       // 只缓存你想缓存的某些页面
       // meta:{   
       //   keepAlive:true
       // }
+=======
+      }
+>>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
     },{
       path: '/classify',
       name: 'classify',
