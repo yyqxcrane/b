@@ -118,7 +118,11 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style lang="scss" scoped>
+=======
+<style lang="scss">
+>>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
 .nav{
   background: #eee;
   li{
