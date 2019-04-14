@@ -65,14 +65,14 @@ export default {
                        userId:this.userInfo._id
                    }
                }).then(res=>{
-<<<<<<< HEAD
+
                  if(res.data.code==200){
                      this.$toast.success(res.data.message);
                  }
-=======
+
                   console.log(res);
                   
->>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
+
                }).catch(err=>{
                   console.log(err);
                   

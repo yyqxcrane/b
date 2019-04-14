@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
+
     <!-- <keep-alive> 全部都被缓存-->
-        <router-view></router-view>
+        <!-- <router-view></router-view> -->
         <!-- <router-view v-if="$route.meta.keepAlive"></router-view>  //只缓存想缓存的，用true,下面那个刚好相反的
         <router-view v-if="!$route.meta.keepAlive"></router-view> -->  
     <!-- </keep-alive> -->
-=======
     <router-view></router-view>
->>>>>>> d93c51217efaa84e1ef1e2eee7958be4ab0cbcf6
     <router-view name="footer-bar"></router-view>
       <!-- <van-tabbar v-model="active">
         <van-tabbar-item icon="wap-home" to="/">首页</van-tabbar-item>
